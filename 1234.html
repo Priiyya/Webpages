@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>LETTERS Website</title>
+<style>
+/* Your existing CSS styles */
+body {
+  background-image: url('https://source.unsplash.com/FwNUSwJDZIQ');
+}
+.container { 
+  width: 100%;
+  height: 100%; 
+  padding-right: 15px; 
+  padding-left: 15px; 
+  margin-right: auto;
+  margin-left: auto;
+}
+.image {
+  background-image: url("https://source.unsplash.com/9QPOIzYchXQ");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  width: 200px;
+  height: 250px; 
+  /* Remove border-radius to make the shape square */
+  border: 5px solid #D4EDF5;
+  margin: 0 auto;
+}
+
+.links-container a {
+  width: 150px; /* Adjust the width as needed */
+}
+
+a {
+  font-size: large;
+}
+.w3-border {
+  border: 3px solid #ccc !important;
+}
+.links-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px;
+}
+.links-container a { 
+  width: 100%;
+  color: #414345 !important;
+  transition: 0.2s;
+}
+.links-container a:hover { 
+  opacity: 1;
+}
+.profession {
+  margin-top: 15px !important;
+}
+.profession span { 
+  font-size: 14px;
+}
+.icons { 
+  display: flex;
+  justify-content: center; 
+  gap: 10px;
+}
+.icons a {
+  text-decoration: none;
+}
+.icons a svg {
+  fill: #fdf5e6 !important;
+  transform: scale(1);
+}
+.border {
+  border: 3px ridge #9DF0F9;
+}
+.contact {
+  text-align: center; 
+  color: #FBFCBD;
+}
+.contact .info {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 15px;
+}
+.contact .info span { 
+  display: flex; 
+  align-items: center;
+  gap: 15px;
+}
+.bio {
+  font-size: 11px; 
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+.link { 
+  width: 100%;
+}
+a {
+  font-size: x-large;
+}
+}
+@media screen and (min-width: 576px) {
+.container {
+  max-width: 540px;
+}
+.profession span { 
+  font-size: 24px;
+}
+.bio {
+  font-size: 15px;
+}
+.links-container > div {
+  display: flex;
+   width: 100%;
+  color: #414345
+  gap: 20px;
+}
+}
+
+/* Additional CSS to center the map */
+.map-container {
+  display: flex;
+  justify-content: center;
+}
+</style>
+<script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+<!-- Content container -->
+<div class="container">
+<!-- Image and name container -->
+<div class="w3-margin-top" style="text-align: center">
+<div class="image w3-round"></div>
+<p class="profession"><span class="w3-padding w3-margin" style="font-weight: bolder;
+color: #F3F2A6">Our<span style="color: #ADD7F1">LETTERS</span></span></p>
+<p class="bio"><span class="w3-padding w3-margin" style="font-weight:
+bolder; color: #F3F2A6">LETTERS PAGE</span></p><br>
+</div>
+<div class="links-container">
+  <div style="display: flex; gap: 20px;">
+    <a href="#" class="w3-button w3-pale-blue w3-hover-pale-green link border" target="_blank">OUR DESIGN</a>
+    <a href="#" class="w3-button w3-pale-blue w3-hover-pale-green link border" target="_blank">MAKE WITH US</a>
+  </div>
+  <div style="display: flex; gap: 20px;">
+    <a href="#" class="w3-button w3-pale-blue w3-hover-pale-green link border" target="_blank">ORDER</a>
+    <a href="#" class="w3-button w3-pale-blue w3-hover-pale-green link border" target="_blank">REVIEWS</a>
+  </div>
+</div>
+
+<!-- Links section 2 -->
+<div class="icons w3-padding">
+<a href="#" target="_blank">
+<i data-feather="facebook"></i>
+</a>
+<a href="#" target="_blank">
+<i data-feather="twitter"></i>
+</a>
+<a href="#" target="_blank">
+<i data-feather="linkedin"></i>
+</a>
+<a href="#" target="_blank">
+<i data-feather="github"></i>
+</a>
+</div><br>
+<div class="contact">
+<p class=""><span class="w3-padding w3-margin" style="font-weight: bolder; color: #fdf5e6">CONTACT US</span></p>
+<div class="info">
+<a href="tel: +022 675422"><span><i data-feather="phone"></i> +91-565342672</span></a>
+<a href="mailto: email@company.com"><span><i data-feather="mail"></i> makeletters@email.com</span></a>
+</div>
+</div><br>
+<div class="contact">
+<p class=""><span class="w3-padding w3-margin" style="font-weight: bolder; color: #fdf5e6">FIND US</span></p>
+<a href="address"><span><i data-feather="add"></i> WORLI MUMBAI 400018</span></a>
+</div>
+<!-- Map container with centered map -->
+<div class="map-container">
+    <!-- Google Map Copied Code -->
+    <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.2317853642708!2d72.82314792424995!3d19.009505404058547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce95127105e9%3A0x312dd4830897a9eb!2sCentury%20Mill%20Mhada%20Building%2C%20Century%20Mills%2C%20Lower%20Parel%2C%20Mumbai%2C%20Maharashtra%20400025!5e0!3m2!1sen!2sin!4v1711292075154!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+
+                    width="400"
+                    height="300"
+                    frameborder="20"
+                    style="border:20;"
+                    allowfullscreen="true"
+                    aria-hidden="false"
+                    tabindex="20"> 
+            </iframe> 
+        </div> 
+<!-- Footer section -->
+<footer>
+    <p>💕One of source of HAPPINESS is receiving unexpected letters💕</p>
+    <style>
+        /* CSS styles for the footer */
+        footer {          
+            color: #629FF6; /* Text color */
+        }
+    </style>
+</footer>
+<!-- End footer -->
+</div>
+<script> feather.replace() </script>
+</body>
+</html>
